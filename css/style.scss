@@ -103,6 +103,14 @@ html{
         height:5.5rem;
         box-shadow:$box-shadow;
         background-color:$white;
+        transition:ease-out .4s;
+
+    &.active{
+            top:115%;
+            transition:ease-in .4s;
+        }
+    
+
 
 
         input{
@@ -127,6 +135,8 @@ html{
 
         }
     }
+
+
 
 
 }

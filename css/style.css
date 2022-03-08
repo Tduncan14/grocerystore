@@ -88,6 +88,14 @@ html {
   -webkit-box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  -webkit-transition: ease-out .4s;
+  transition: ease-out .4s;
+}
+
+.header .search-form.active {
+  top: 115%;
+  -webkit-transition: ease-in .4s;
+  transition: ease-in .4s;
 }
 
 .header .search-form input {

@@ -19,6 +19,20 @@ html {
   scroll-behavior: smooth;
 }
 
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .8rem 3rem;
+  background: #bac34e;
+  color: #fff;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #222;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -122,13 +136,19 @@ html {
 .header .shopping-cart {
   position: absolute;
   top: 115%;
-  right: 2rem;
+  right: -105%;
   background: #fff;
   border-radius: .5rem;
   -webkit-box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
   width: 35rem;
   padding: 2rem;
+}
+
+.header .shopping-cart.active {
+  right: 2rem;
+  -webkit-transition: .4s linear;
+  transition: .4s linear;
 }
 
 .header .shopping-cart .box {
@@ -175,6 +195,88 @@ html {
 
 .header .shopping-cart .box .content span.multiply {
   margin: 0 .5rem;
+}
+
+.header .shopping-cart .total {
+  color: #667;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.header .shopping-cart .total span {
+  color: #222;
+}
+
+.header .shopping-cart .btn {
+  text-align: center;
+  width: 100%;
+}
+
+.header .login-form {
+  position: absolute;
+  top: 115%;
+  right: -105%;
+  background: #fff;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  width: 35rem;
+  padding: 2rem;
+}
+
+.header .login-form h3 {
+  color: #222;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: .7rem;
+}
+
+.header .login-form .box {
+  margin: .7rem 0;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.2rem;
+  font-size: 1.5rem;
+  color: #222;
+  text-transform: none;
+  width: 100%;
+}
+
+.header .login-form .remember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+  margin: .7rem 0;
+}
+
+.header .login-form label {
+  font-size: 1.5rem;
+  color: #667;
+  cursor: pointer;
+}
+
+.header .btn {
+  margin: 1rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.header p {
+  color: #667;
+  padding-top: .7rem;
+  font-size: 1.4rem;
+}
+
+.header p a {
+  color: #bac34e;
+}
+
+.header p a:hover {
+  text-decoration: none;
 }
 
 #menu-btn {

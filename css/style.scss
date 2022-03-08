@@ -253,6 +253,12 @@ html{
         padding:2rem;
 
 
+
+        &.active{
+            right:2rem;
+            transition:.4s linear;
+        }
+
         h3{
             color:$black;
             text-transform:uppercase;
@@ -319,4 +325,116 @@ html{
 
 #menu-btn{
     display:none;
+
+}
+
+// ending of the heading
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// beginning of media queries
+
+@media screen and ( max-width:991px){
+    html{
+        font-size:55%;
+    }
+
+    .header{
+        padding:2rem;
+    }
+}
+
+
+@media screen and (max-width:768px){
+
+
+    #menu-btn{
+        display:inline-block;
+    }
+
+
+    .header{
+
+
+        .search-form{
+            width:100%;
+            right:0;
+            border-radius:0;
+
+
+            &.active{
+                top:99%;
+                border-top:$border;
+                border-bottom:$border;
+                
+            }
+        }
+
+
+
+        .navbar{
+            position:absolute;
+            top:99%; left:0; right:0;
+            background:$white;
+            border-top:$border;
+            border-bottom:$border;
+            clip-path:polygon(0 0,100% 0, 100% 0, 0 0);
+
+
+
+
+
+            &.active{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+
+
+            .a{
+                margin:1.5rem;
+                padding:1.5rem;
+                background:$light-bg;
+                font-size:2rem;
+                display:block;
+                border-radius: .5rem;
+
+            }
+
+        }
+    }
+
+
+}
+
+
+@media screen and (max-width:450px){
+
+    html{
+        font-size:50%
+    }
+    
+
 }

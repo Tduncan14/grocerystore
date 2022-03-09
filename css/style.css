@@ -327,13 +327,14 @@ html {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
-  .header .navbar .a {
+  .header .navbar a {
     margin: 1.5rem;
     padding: 1.5rem;
     background: #f3f3f3;
     font-size: 2rem;
-    display: block;
     border-radius: .5rem;
+    display: block;
+    text-align: center;
   }
 }
 

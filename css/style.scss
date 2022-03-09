@@ -372,6 +372,8 @@ html{
 @media screen and (max-width:768px){
 
 
+  
+  
     #menu-btn{
         display:inline-block;
     }
@@ -390,7 +392,7 @@ html{
                 top:99%;
                 border-top:$border;
                 border-bottom:$border;
-                
+
             }
         }
 
@@ -413,14 +415,16 @@ html{
             }
 
 
-            .a{
+            a{
                 margin:1.5rem;
                 padding:1.5rem;
                 background:$light-bg;
                 font-size:2rem;
-                display:block;
                 border-radius: .5rem;
-
+                display:block;
+                text-align:center;
+            
+           
             }
 
         }
